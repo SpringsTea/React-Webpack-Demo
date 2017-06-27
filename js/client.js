@@ -1,13 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
+import Layout from "./components/Layout";
 
-class Layout extends React.Component{
-	render(){
-		return (
-			<h1>It works!</h1>
-		);
-	}
-}
+//webpack --watch
 
 const app = document.getElementById('app');
 
