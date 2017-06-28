@@ -3,9 +3,19 @@ import React from "react";
 import Title from "./Header/Title";
 
 export default class Header extends React.Component{
+
+	handleChange(e){
+		var val = e.target.value;
+		this.props.changeTitle(val);
+	}
+
+
 	render(){
 		return (
-			<Title title={this.props.title} />
+			<div>
+				<Title title={this.props.title} />
+				<input onChange = {this.handleChange.bind(this)} />
+			</div>
 		);
 	}
 }
